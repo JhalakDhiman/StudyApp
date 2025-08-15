@@ -6,6 +6,7 @@
     "@ramonak/react-progress-bar": "^5.2.0",
     "@reduxjs/toolkit": "^2.2.7",
     "axios": "^1.7.3",
+    "bcryptjs": "^3.0.2",
     "chart.js": "^4.4.4",
     "concurrently": "^8.2.2",
     "copy-to-clipboard": "^3.3.3",
