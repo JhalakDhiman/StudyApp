@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+.codeBlock1 {
+    width: 372.95px;
+    height: 257.05px;
+    border-radius: 100%;
+    left: calc(50% - 372.95px / 2 - 76.53px);
+    top: calc(50% - 257.05px / 2 - 47.47px);
+    background: linear-gradient(
+      123.77deg,
+      #8a2be2 -6.46%,
+      #ffa500 59.04%,
+      #f8f8ff 124.53%
+    );
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+  }
+
+  .codeBlock2 {
+    width: 372.95px;
+    height: 257.05px;
+    border-radius: 100%;
+    left: calc(50% - 372.95px / 2 - 76.53px);
+    top: calc(50% - 257.05px / 2 - 47.47px);
+    background: linear-gradient(
+      123.77deg,
+        #1fa2ff -3.62%,
+        #12d8fa 50.44%,
+        #a6ffcb 104.51%
+    );
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+  }
+
+  .backgroundHome{
+    background-image: url(../src/assets/Images/bghome.svg);
+  }
+
+  .custom-loader {
+    width: 40px;
+    height: 10px;
+    color: #766DF4;
+    background:
+      radial-gradient(farthest-side,currentColor 90%,#0000) left  /10px 10px,
+      radial-gradient(farthest-side,currentColor 90%,#0000) center/10px 10px,
+      radial-gradient(farthest-side,currentColor 90%,#0000) right /10px 10px,
+      linear-gradient(currentColor 0 0) center/100% 4px; 
+    background-repeat: no-repeat;
+    position: relative;
+    animation: s6 2s infinite linear;
+  }
+  .custom-loader:before,
+  .custom-loader:after {
+    content: "";
+    position: absolute;
+    inset:0;
+    background:inherit;
+    animation:inherit;
+    --s:calc(50% - 5px);
+    animation-direction: reverse;
+  }
+  .custom-loader:after {
+    --s:calc(5px - 50%);
+  }
+  
+  @keyframes s6 {
+    0%   {transform: translate(var(--s,0)) rotate(0)}
+    100% {transform: translate(var(--s,0)) rotate(1turn)}
+  }
